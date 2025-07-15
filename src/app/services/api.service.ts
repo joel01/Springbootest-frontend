@@ -21,7 +21,7 @@ export interface ContactMessage {
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl = 'http://localhost:8080/api'; // Cambia el puerto si tu backend usa otro
+  private apiUrl = 'http://localhost:8081/api'; // Cambia el puerto si tu backend usa otro
 
   constructor(private http: HttpClient) { }
 

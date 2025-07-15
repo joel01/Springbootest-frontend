@@ -1,1 +1,11 @@
-<p>profile works!</p>
+<h2>Perfil</h2>
+<p><strong>Nombre:</strong> {{ profile?.name }}</p>
+<p><strong>Profesión:</strong> {{ profile?.profession }}</p>
+<p><strong>Correo:</strong> {{ profile?.contact }}</p>
+
+<h3>Habilidades:</h3>
+<ul>
+  @for (skill of profile.skills; track skill) {
+    <li>{{ skill }}</li>
+  }
+</ul>
